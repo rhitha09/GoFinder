@@ -46,7 +46,7 @@
     font-size: 20px;
     text-decoration: none;
     margin: 10px;
-    color: silver;
+    color: rgb(121, 121, 121);
 }
 .navbar1 a:hover{
     background-color: rgb(64, 64, 234);
