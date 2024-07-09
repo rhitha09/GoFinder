@@ -1,0 +1,968 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar1{
+    background-color:white ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.menu-toggle{
+    display: none;
+}
+.bar{
+    width: 30px;
+    height: 5px;
+    margin-top: 5px;
+    background-color: orangered;
+}
+.on1{
+    display: flex;
+    align-items: center;
+    
+}
+.on1 h1{
+    margin: 20px;
+    font-size: 40px;
+    color: rgb(64, 64, 234) ;
+}
+.navigation{
+    display: flex;
+}
+.navbar1 li{
+    list-style-type: none;
+}
+.navbar1 a{
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px;
+    color: silver;
+}
+.navbar1 a:hover{
+    background-color: rgb(64, 64, 234);
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+}
+ .navigate .btn-1{
+    all: unset;
+    padding:10px 15px;
+    background-color:orangered;
+    border-radius: 20px;
+    margin:10px; 
+    color: white;
+}
+.btn-1:hover{
+    background-color: rgba(64, 64, 234, 0.372);
+    
+}
+
+/* banner */
+.banner{
+    display: flex;
+    background-image: url(./images/close-up-young-business-team-working.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    justify-content: space-between;
+    animation-name: ban;
+   animation-duration: 2s;
+   animation-timing-function:cubic-bezier(0.86, 0, 0.07, 1) ;
+   animation-iteration-count: 1;
+    transition: ease-out;
+    
+}
+
+.ban-1{
+background-color: rgba(0, 0, 0, 0.187);
+width: 45%;
+align-items: center;
+/* padding: 10px; */
+margin: 100px;
+text-align: left;
+text-wrap: wrap;
+animation-name: ban;
+animation-duration: 2s;
+animation-iteration-count: 1;
+transition: ease-out;
+    
+}
+@keyframes ban {
+    from{
+        transform:translateY(100%) ;
+        
+    }
+    to{
+        transform:translateY(0%) ;
+    }
+}
+.ban-1 h2{
+    color: white;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-family: "Roboto";
+}
+.ban-1 h1{
+    color: whitesmoke;
+    font-size: 60px;
+    font-family: "Roboto";
+    margin-bottom: 50px;
+}
+.ban-1 a{
+    padding: 20px;
+    background-color:rgba(0, 255, 255, 0.658);
+    color:white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-family: "Roboto";
+    animation-name:slider ;
+    animation-duration: 2s;
+    animation-timing-function: steps(5s);
+}
+.ban-1 a:hover{
+    background-color:orangered;
+    transition: 1s ease-out;
+    color: whitesmoke;
+    animation-name: drop;
+}
+
+.ban-2{
+    width: 40%;
+    background-color: rgba(0, 0, 139, 0.459);
+    padding: 20px;
+    border-radius: 30px;
+    margin-top: 80px;
+    text-align: center;
+    height: 30%;
+}
+.ban-2 h1{
+    color:whitesmoke;
+    font-family: "Roboto";
+    margin-bottom: 30px;
+}
+.ban-2 input{
+    all: unset;
+    background-color: white;
+    width: 40%;
+    padding: 3%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    
+} 
+.ban-2 p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight:600;
+}
+.ban-2 button{
+    all: unset;
+    width: 80%;
+    color: white;
+    background-color:orangered;
+    padding: 3%;
+    border-radius: 30px;
+    font-family: "Roboto";
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.ban-2 button a{
+    text-decoration: none;
+    color: white;
+    
+    
+}
+.ban-2 button:hover{
+    background-color: rgba(0, 255, 255, 0.658);
+    transition: 0.5 ease-in-out;
+    text-decoration: underline;
+}
+section{
+    height: 250vh;
+    margin-top: 20px;
+    padding: 3% 10%;
+}
+.vids{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    /* border: 1px solid; */
+    height: auto;
+}
+.vids >div{
+    width: 300px;
+    border-radius: 10%;
+    background-color: darkblue;
+}
+
+.intro{
+    display: flex;
+    border-radius: 20px;
+    height: 30%;
+    margin-top: 70px;
+}
+.intro-1{
+    border-top-left-radius:50px ;
+    width: 25%;
+    background-image: url(./images/professional-asian-businesswoman-gray-blazer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40%;
+    height: 100%;
+    padding: 20px;
+}
+.intro-1 div{
+ background-color:rgb(30, 30, 148);
+ width: 30px;
+ border-radius: 20px;
+ padding: 30px;
+ margin: 200px 50px;
+ text-align: left;
+ animation-name: up;
+ animation-duration: 1s;
+ animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+ animation-iteration-count: 10;
+ height: 90px;
+
+}
+@keyframes up {
+    50%{
+        transform: rotate(360deg);
+    }
+    
+}
+.intro-1 h1{
+    font-family: "Roboto";
+    color:white;
+}
+.intro-1 p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.intro-2{
+    width: 50%;
+    background-color: rgb(30, 30, 148);
+    height: 100%;
+    padding: 50px;
+    text-align: left;
+}
+.intro-2 h1{
+    font-size: 45px;
+    color: whitesmoke;
+    font-family: "Roboto";
+    margin-bottom: 30px;
+}
+.intro-2 p{
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin-bottom: 20px;
+}
+.intro-2 button{
+    all: unset;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px;
+    border-radius: 50px;
+    color: white;
+    border: 3px solid white;
+    font-size: 14px;
+   
+}
+.intro-2 button:hover{
+    background-color: orangered;
+    transition: 2s ease-in-out;
+    border: none;
+    margin: 0px 20px;
+}
+.intro-2 a{
+    color: whitesmoke;
+    font-size: 14px;
+    text-decoration: none;
+    font-family:"Roboto";
+    
+
+}
+.intro-2 a:hover{
+    text-decoration: underline;
+    animation: line;
+    animation-duration: 5s;
+    animation-timing-function: steps(2);
+    transition: 5s ease-in-out;
+}
+
+.intro-3{
+    width: 25%;
+    background-image: url(./images/horizontal-shot-happy-mixed-race-females.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70%;
+    height: auto;
+}
+.intro-4{
+    text-align: center;
+    padding: 40px;
+    margin-top: 50px;
+}
+.intro-4 h1{
+    font-size: 50px;
+    font-family: "Roboto";
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+.intro-4 p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.432);
+    font-weight: 600;
+
+}
+
+.features{
+    height: 50%;
+    margin-top: 70px;
+    animation-name: slidie;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+}
+@keyframes slidie {
+    60%{
+        transform:translateY(50%) ;
+        margin-bottom: 100px;
+    }
+}
+.features >div{
+    background-color: white;
+    width: 100%;
+    height: 15%;
+    margin-top: 10px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 30px solid rgba(26, 25, 25, 0.13);
+}
+.features >div:hover{
+animation-name: zoom;
+animation-duration: 2s;
+animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+animation-iteration-count: 2;
+box-shadow: 0px 0px 100px solid black;
+}
+@keyframes zoom {
+0%{
+opacity: 0;
+}
+20%{
+transform: scale(1.1);
+opacity: 1;
+}
+40%{
+transform: rotateX(90deg);
+}
+    
+}
+.logos{
+    width: 100px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 100px solid rgba(0, 0, 0, 0.347);
+}
+.media{
+    width: 80%
+}
+.media >div{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom:100px ;
+}
+.media h1{
+    font-family: "Roboto";
+    font-size: 30px;
+    
+}
+
+.media p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+}
+.btn-3{
+    all: unset;
+    background-color: rgb(20, 52, 196);
+    padding:15px;
+    border-radius: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+
+}
+.btn-3 a{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+.media button:hover{
+    background-color: orangered;
+    transition: ease-in-out;
+}
+.btn-2{
+    all: unset;
+    padding: 7px;
+    font-size: 11px;
+    background-color: rgb(64, 64, 234);
+    color: white;
+    border-radius: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+.main{
+    margin-top: 100px;
+    height: 900px;
+    background-color: white;
+    padding: 3% 10%;
+}
+.meet{
+    display: flex;
+    height: 70%;
+    align-items: left;
+    margin-bottom: 30px;
+}
+.help{
+    width: 50%;
+    background-color: rgb(20, 52, 196) ;
+    border-radius:30px 0px 0px 30px;
+    padding: 50px;
+}
+.help:hover{
+    background-color: orangered;
+    transition: 0.5s ease-out;
+}
+.help h1{
+    font-family: "Roboto";
+    color: white;
+    font-size: 50px;
+    margin-bottom: 30px;
+    animation: word;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@keyframes word {
+    0%{
+        opacity: 0;
+        
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+.help p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 20px;
+}
+.team{
+    margin-left: 20px;
+    width: 50%;
+    background-image: url(./images/people-working-as-team-company.jpg);
+    background-position: 45%;
+    background-repeat: no-repeat;
+}
+.recent{
+    margin-top: 80px;
+    width: 50%;
+    text-wrap: wrap;
+}
+.recent h1{
+    font-family: "Roboto";
+    font-size: 40px;
+}
+.recent p{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 0.502);
+}
+.card-container{
+    padding: 3% 10%;
+    margin-top: 100px;
+    margin-left: 10px;
+}
+.card-container{
+    animation-name: slideup;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+}
+@keyframes slideup {
+    20%{
+        opacity: 0;
+    }
+    40%{
+        transform: translateY(100%);
+        opacity: 1;
+    }
+    60%{
+        transform: translateX(0%);
+    }
+    80%{
+        transform: translateX(100%);
+    }
+    
+}
+.card-container i{
+    color: olivedrab;
+}
+
+.card{
+    margin-bottom:30px;
+    text-align: center;
+    border: none;
+}
+.card div{
+    display: flex;
+    justify-content: space-around;
+}
+.card div p{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.363);
+}
+.card div button{
+    all: unset;
+    border-radius: 30px;
+    background-color: orangered;
+    padding: 10px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+}
+.card div button a{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.card div button:hover {
+    background-color: rgb(30, 53, 155);
+    transition: 0.3s ease-out;
+}
+.card-container button{
+    all: unset;
+    border-radius: 40px;
+    background-color: rgb(30, 53, 155);
+    padding: 15px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    font-size: 25px;
+    margin-left: 70%;
+}
+.card-container a{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    font-size: 25px;
+    text-decoration: none;
+
+}
+.card-container button:hover{
+    background-color:orangered;
+    transition: 0.3s ease-out;
+
+}
+.slider{
+    height: auto;
+    padding: 3% 10%;
+    margin-top: 100px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    
+}
+.slider h1{
+    color:black;
+    font-family: "Roboto";
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    color: orangered;
+}
+.slide{
+    text-align: center;
+    width:100%;
+    height: 500px;
+    border-radius: 20px;
+    margin: auto;
+    padding: 5% 10%;
+    display: none; 
+    align-content: center;
+    overflow: hidden;
+}
+.slide div{
+    transform: translateX(50%);
+
+}
+
+.slide  img{
+    padding: 5px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 50px solid black;
+    margin-right: 10px;
+    width: 70%;
+}
+.slide em{
+    color: orangered;
+}
+
+.post{
+  
+    margin-top: 100px;
+    background-image: url(./images/millennial-group-young-businesspeople.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 40px;
+}
+.post >div{
+    padding: 10%;
+    width: 100%;
+    background-color: rgba(255, 68, 0, 0.692);
+    display: flex;
+    justify-content: space-between;
+}
+.edit{
+    width: 60%;
+}
+.edit h1{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.edit p{
+    font-size: 20px;
+    color: white;
+}
+.nb{
+    text-decoration: none;
+    color: white;
+    border-radius: 30px;
+    background-color: rgba(255, 68, 0, 0.692) ;
+    border: 3px solid white;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 5px;
+}
+.nb:hover{
+    background-color: white;
+    color: rgba(255, 68, 0, 0.692) ;
+}
+.job a{
+    text-decoration: none;
+    color: white;
+}
+.job a:hover{
+    border-bottom: 2px solid white;
+    transition: 0.5s ease-in-out;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: translateX(40px);
+}
+ .ban-2 i{
+    color:rgba(0, 0, 0, 0.705); 
+    position: absolute; 
+    margin-left: 20px; 
+    z-index: 2;
+    margin-top: 20px;
+}
+.media >div i{
+    color: rgb(20, 52, 196);
+}
+footer{
+    margin: 70px 0px;
+    padding: 2% 10%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+footer >div{
+    text-align: left;
+    cursor: pointer;
+}
+footer nav{
+    background-color: rgb(118, 219, 224);
+    padding: 50px 70px;
+    margin-left: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+footer nav p{
+    margin-top: -30px;
+}
+footer nav input{
+    all: unset;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+}
+footer nav input:hover{
+    background-color:wheat ;
+    color: black;
+}
+.sum{
+    all: unset;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: orangered;
+    text-align: center;
+    color: white;
+}
+.footer{
+    background-color:rgb(20, 52, 196);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+.footer a:hover{
+    color: rgba(255, 166, 0, 0.568);
+    text-decoration: underline;
+}
+.on{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.orange-star{
+    color: gold;
+    border: none;
+}
+.change{
+    margin: 7px;
+}
+.change p{
+    margin-top: 10px;
+}
+#change4 h4{
+    text-align: center;
+}
+.change p>a{
+    text-decoration: none;
+}
+.change a:hover{
+    color: rgb(4, 151, 243);
+    text-decoration: underline overline;
+}
+
+@media screen and (max-width:950px){
+    .navbar1{
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    .navigation{
+        display: none;
+        margin: auto;
+        /* margin-top: 100px;
+        margin-left: 30px; */
+        align-items: center;
+    }
+    .navigate{
+        display: none;
+    }
+    .menu-toggle{
+        display: block;
+        margin: auto;
+        position: relative;
+        margin: auto;
+        margin-left: 20%;
+
+    }
+    .active{
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .active li{
+        margin-top: 5px;
+    }
+    .banner{
+        width: 100%;
+        flex-direction: column;
+        margin: auto;
+        padding: auto;
+        overflow:hidden;
+        align-items: center;
+    }
+    .ban-1{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .ban-2{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .section{
+        margin: auto;
+        
+    }
+    .intro{
+        width: 100%;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 200px;
+        
+    }
+    .intro-1{
+        width: 100%;
+        margin: auto;
+    }
+    .intro-1 div{
+        width: 30%;
+    }
+    .intro-2{
+        width: auto;
+        margin: auto;
+        text-wrap: wrap;
+        flex-direction: column;
+        font-size: 80%;
+        height: auto;
+        text-align: center;
+    }
+    .intro-3{
+        width: 100%;
+        padding-top: 200px;
+        border-radius: none;
+        margin: auto;
+        height: auto;
+    }
+.intro-4{
+    margin-top: 900px;
+    text-wrap: wrap;
+    height: auto;
+    width: auto;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.intro-4 h1{
+    font-size: 24px;
+}
+.features{
+    /* flex-direction: column; */
+    display: none;
+}
+.meet{
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 150px;
+}
+.help{
+    width:100%;
+    margin: auto;
+    text-align: center;
+}
+.team{
+    width: 100%;
+    margin: auto;
+    padding: 100px;
+    background-position: 40%;
+}
+.recent{
+    width: auto;
+    margin: auto;
+    margin-top: 600px;
+    text-align: center;
+}
+.recent h1{
+    font-size: 24px;
+}
+.recent p{
+    font-size: 12px;
+}
+.card-container{
+    margin-top: 500px;
+}
+.card-container button{
+    width: 30%;
+    font-size: 15px;
+    padding: 20px;
+    align-items: center;
+    margin: auto;
+}
+.post div{
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+.edit{
+    width: auto;
+    margin: auto;
+    text-align: center;
+}
+.job{
+    width: auto;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px;
+}
+.na{
+    display: none;
+}
+footer{
+    flex-direction: column-reverse;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+}
+footer nav form{
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+.sum{
+    width: 100%;
+    margin-top: 10px;
+}
+.footer{
+    flex-direction: column-reverse;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+.footer a{
+    margin-bottom: 10px;
+}
+.on{
+    flex-direction: column;
+}
+
+}
